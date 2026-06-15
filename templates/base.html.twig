@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Le Repaire des Moustaches{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{ path('app_home') }}">Accueil</a>
+            <a href="#">Connexion</a>
+            <a href="#">Ateliers</a>
+        </nav>
+    </header>
+    <main>
+        {% block body %}{% endblock %}
+    </main>
+    <footer>
+        © Le Repaire des Moustaches
+    </footer>
+</body>
+</html>
